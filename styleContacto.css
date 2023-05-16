@@ -67,6 +67,44 @@ html, body {
             position: relative;
             padding: 10px;
     }
+    .linke{
+      min-width: 300px;
+      min-height: 60px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      font-weight: 700;
+      color: white;
+      background: #0e76a8;
+      border: none;
+      border-radius: 1000px;
+      box-shadow: 12px 12px 24px #0e76a8;
+      transition: all 0.3s ease-in-out 0s;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+      padding: 10px;
+}
+.salesforce{
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: #1798c1;
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px #1798c1;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
 .whats::before {
   content: '';
     border-radius: 1000px;
@@ -286,6 +324,129 @@ html, body {
           animation: none;
           display: none;
         }
-
+        .linke::before {
+          content: '';
+            border-radius: 1000px;
+            min-width: calc(300px + 12px);
+            min-height: calc(60px + 12px);
+            border: 6px solid white;
+            box-shadow: 0 0 60px #0e76a8;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all .3s ease-in-out 0s;
+          }
+          
+          .linke:hover, .linke:focus {
+            color: #0e76a8;
+            transform: translateY(-6px);
+          }
+          
+        .linke:hover::before,.linke:focus::before {
+            opacity: 1;
+          }
+          
+        .linke::after {
+            content: '';
+            width: 30px; height: 30px;
+            border-radius: 100%;
+            border: 6px solid #0e76a8;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring 1.5s infinite;
+          }
+          
+        .linke:hover::after,.linke:focus::after {
+            animation: none;
+            display: none;
+          }
+          .linke::before {
+          content: '';
+            border-radius: 1000px;
+            min-width: calc(300px + 12px);
+            min-height: calc(60px + 12px);
+            border: 6px solid white;
+            box-shadow: 0 0 60px #0e76a8;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all .3s ease-in-out 0s;
+          }
+          
+          .linke:hover, .linke:focus {
+            color: #0e76a8;
+            transform: translateY(-6px);
+          }
+          
+        .linke:hover::before,.linke:focus::before {
+            opacity: 1;
+          }
+          
+        .linke::after {
+            content: '';
+            width: 30px; height: 30px;
+            border-radius: 100%;
+            border: 6px solid #0e76a8;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring 1.5s infinite;
+          }
+          
+        .linke:hover::after,.linke:focus::after {
+            animation: none;
+            display: none;
+          }
+          .salesforce::before {
+            content: '';
+              border-radius: 1000px;
+              min-width: calc(300px + 12px);
+              min-height: calc(60px + 12px);
+              border: 6px solid white;
+              box-shadow: 0 0 60px #1798c1;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              opacity: 0;
+              transition: all .3s ease-in-out 0s;
+            }
+            
+            .salesforce:hover, .salesforce:focus {
+              color: #1798c1;
+              transform: translateY(-6px);
+            }
+            
+          .salesforce:hover::before,.salesforce:focus::before {
+              opacity: 1;
+            }
+            
+          .salesforce::after {
+              content: '';
+              width: 30px; height: 30px;
+              border-radius: 100%;
+              border: 6px solid #1798c1;
+              position: absolute;
+              z-index: -1;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              animation: ring 1.5s infinite;
+            }
+            
+          .salesforce:hover::after,.salesforce:focus::after {
+              animation: none;
+              display: none;
+            }
+      
         
         

@@ -9,7 +9,12 @@ function main () {
 				left: '0'
 			});
 			contador = 0;
-		} 
+		} else {
+			$('nav').animate({
+				left: '-100%'
+			});
+			contador = 1;
+		}
 		$('.submenu').click(function(){
 			contador = 1;
 			$('nav').animate({
